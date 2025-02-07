@@ -1,0 +1,58 @@
+/* Center everything */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #d38827;
+    font-family: Arial, sans-serif;
+  }
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #ffcb05;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background-color: #ffac33;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    background:  #d38827;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: -10px 8px 25px rgba(0, 0, 0, 0.5); ;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    display: none;
+  }
+  
+  .card img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
