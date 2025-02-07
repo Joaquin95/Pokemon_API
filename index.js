@@ -13,11 +13,15 @@ async function fetchData() {
     }
 
     const data = await response.json();
-    const pokemonSprite = data.sprites.front_default;
-    const imgElement =document.getElementById("pokemonSprite");
+    document.getElementById("pokemonSprite").src = data.sprites.front_default;
+    document.getElementById("pokemonNameDisplay").textContent = data.name.toUpperCase();
+    document.getElementById("pokemonType").textContent = `Type: ${data.types[0].type.name}`;
 
-    imgElement.src = pokemonSprite;
-    imgElement.style.display = "block"
+
+    document.getElementById("pokemonCard").style.display = "block";
+    document.getElementById("pokemonSprite").style.display = "block";
+
+
   } 
   catch (error) {
     console.log(error);
